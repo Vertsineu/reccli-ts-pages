@@ -1,0 +1,81 @@
+site_name: RecCLI TypeScript
+site_url: https://vertsineu.github.io/reccli-ts-pages
+site_description: RecCLI TypeScript Documentation
+site_author: Vertsineu
+
+# Repository
+repo_name: Vertsineu/reccli-ts-pages
+repo_url: https://github.com/Vertsineu/reccli-ts-pages
+edit_uri: edit/master/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Vertsineu
+
+# Configuration
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: material/book-open-page-variant
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.emoji
+  - meta
+  - toc:
+      permalink: true
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - User Guide: 
+    - Overview: user-guide/index.md
+    - Installation: user-guide/installation.md
+  - API Reference: api-reference.md
+  - Contributing: contributing.md
