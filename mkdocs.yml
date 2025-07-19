@@ -9,7 +9,7 @@ repo_url: https://github.com/Vertsineu/reccli-ts-pages
 edit_uri: edit/master/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025 Vertsineu
+copyright: Copyright &copy; 2025 Vertsineu - <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 
 # Configuration
 theme:
@@ -79,3 +79,4 @@ nav:
     - Installation: user-guide/installation.md
   - API Reference: api-reference.md
   - Contributing: contributing.md
+  - License: license.md

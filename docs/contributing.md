@@ -89,4 +89,4 @@ This will start a local server with the documentation site.
 
 ## License
 
-By contributing to RecCLI TypeScript, you agree that your contributions will be licensed under the project's MIT License.
+By contributing to RecCLI TypeScript documentation, you agree that your contributions will be licensed under the project's Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). See the [License](license.md) page for more details.
