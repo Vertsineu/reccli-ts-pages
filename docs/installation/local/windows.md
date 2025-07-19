@@ -12,7 +12,7 @@
 ## 快速安装
 
 1. 从以下链接下载最新的 Windows 安装包：
-   [reccli-ts-windows-x86_64.zip](https://github.com/Vertsineu/reccli-ts/releases/download/v2.0.0/reccli-ts-windows-x86_64.zip)
+   [reccli-ts-windows-x86_64.zip](https://github.com/Vertsineu/reccli-ts/releases/download/v2.0.1/reccli-ts-windows-x86_64.zip)
 
 2. 解压下载的 ZIP 文件到随意的一个临时目录下
 
