@@ -1,6 +1,6 @@
-site_name: RecCLI TypeScript
+site_name: RecCLI TypeScript 说明文档
 site_url: https://vertsineu.github.io/reccli-ts-pages
-site_description: RecCLI TypeScript Documentation
+site_description: RecCLI TypeScript 说明文档
 site_author: Vertsineu
 
 # Repository
@@ -14,9 +14,8 @@ copyright: Copyright &copy; 2025 Vertsineu - <a href="https://creativecommons.or
 # Configuration
 theme:
   name: material
-  language: en
+  language: zh
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.indexes
@@ -28,16 +27,16 @@ theme:
     - content.code.copy
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   font:
     text: Roboto
@@ -45,6 +44,11 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: material/book-open-page-variant
+  
+  # 社交媒体链接
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Vertsineu
 
 # Extensions
 markdown_extensions:
@@ -72,11 +76,18 @@ plugins:
 
 # Page tree
 nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - User Guide: 
-    - Overview: user-guide/index.md
-    - Installation: user-guide/installation.md
-  - API Reference: api-reference.md
-  - Contributing: contributing.md
-  - License: license.md
+  - 首页: index.md
+  - 安装:
+    - 概述: installation/index.md
+    - 本地安装:
+      - Windows: installation/local/windows.md
+      - Linux: installation/local/linux.md
+    - 远程安装:
+      - VLab: installation/remote/vlab.md
+  - 使用: 
+    - 概述: user-guide/index.md
+    - 前置条件: user-guide/prerequisites.md
+    - 登录: user-guide/login.md
+    - 功能介绍: user-guide/usage.md
+  - 更多:
+    - Q&A: more/faq.md

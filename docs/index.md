@@ -1,34 +1,24 @@
 # RecCLI TypeScript
 
-Welcome to the RecCLI TypeScript documentation!
+欢迎来到 RecCLI TypeScript 的文档！
 
-## Overview
+## 概述
 
-RecCLI TypeScript is a powerful TypeScript library for developing command-line interfaces and tools. This documentation will help you get started with RecCLI TypeScript, understand its features, and learn how to use it effectively in your projects.
+这个项目最初是为 USTC Rec 云盘服务开发的交互式命令行工具。随着 Rec 云盘服务即将被 Seafile 新网盘服务取代，我们对其进行了重新设计，使其成为一个专门用于将数据从 Rec 云盘无缝迁移至 Seafile 新云盘的高效工具。
 
-## Features
+### 项目特点
 
-- **Type-Safe CLI Development**: Build robust command-line applications with TypeScript's type safety
-- **Interactive Commands**: Create interactive command-line experiences
-- **Extensible Architecture**: Easily extend and customize for your specific needs
-- **Modern API Design**: Clean, modern API that's easy to use and understand
+- **高效迁移**: 针对大规模数据传输进行了优化，支持并行操作，高效利用网络带宽
+- **用户友好**: 直观的 Web 界面，提供详细的迁移进度和状态报告
+- **批量处理**: 支持批量迁移配置，适合科研团队和教学部门的集中迁移需求
 
-## Quick Start
+### 适用场景
 
-Check out the [Getting Started](getting-started.md) guide to begin using RecCLI TypeScript in your projects.
+RecCLI TypeScript 工具专为 USTC 校内师生设计，特别适合以下场景：
 
-```typescript
-import { RecCLI } from 'reccli-ts';
+- 个人研究资料的平稳迁移
+- 科研小组的协作项目文件转移
+- 教学资源的批量迁移
+- 实验室数据的系统性转移
 
-const cli = new RecCLI()
-  .command('hello', 'Say hello')
-  .action(() => {
-    console.log('Hello, world!');
-  });
-
-cli.parse();
-```
-
-## Contributing
-
-We welcome contributions! See our [Contributing Guide](contributing.md) for more details.
+通过本工具，用户可以最小化云盘服务切换带来的工作中断，确保科研和教学工作的连续性。
