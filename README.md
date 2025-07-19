@@ -12,14 +12,16 @@ This repository contains the documentation for RecCLI TypeScript, hosted at [ver
 ### Setup
 
 1. Clone this repository:
+
    ```bash
-   git clone https://github.com/Vertsineu/reccli-ts-pages.git
-   cd reccli-ts-pages
+        git clone https://github.com/Vertsineu/reccli-ts-pages.git
+        cd reccli-ts-pages
    ```
 
 2. Install dependencies:
+
    ```bash
-   pip install -r requirements.txt
+        pip install -r requirements.txt
    ```
 
 ### Local Development
