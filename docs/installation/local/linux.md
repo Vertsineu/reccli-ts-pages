@@ -7,7 +7,6 @@
 安装包支持以下系统环境：
 
 - 现代 Linux 发行版 (Ubuntu 18.04+, Debian 10+, CentOS 7+, Fedora 30+ 等)
-- 安装了图形界面，如 GNOME、KDE 等
 - 至少 500MB 可用磁盘空间
 
 ## 快速安装
