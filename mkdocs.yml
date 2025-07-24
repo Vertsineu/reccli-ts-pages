@@ -16,9 +16,7 @@ theme:
   name: material
   language: zh
   features:
-    - navigation.sections
     - navigation.expand
-    - navigation.indexes
     - navigation.top
     - search.highlight
     - search.share
@@ -86,7 +84,6 @@ nav:
       - VLab: installation/remote/vlab.md
   - 使用: 
     - 概述: user-guide/index.md
-    - 前置条件: user-guide/prerequisites.md
     - 登录: user-guide/login.md
     - 功能介绍: user-guide/usage.md
   - 更多:

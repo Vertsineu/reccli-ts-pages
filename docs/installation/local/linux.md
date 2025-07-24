@@ -12,30 +12,30 @@
 ## 快速安装
 
 1. 从以下链接下载最新的 Linux 安装包：
-   [reccli-ts-linux-x86_64.tar.gz](https://github.com/Vertsineu/reccli-ts/releases/download/v2.0.2/reccli-ts-linux-x86_64.tar.gz)
+   [reccli-ts-linux-x86_64.tar.gz](https://github.com/Vertsineu/reccli-ts/releases/download/v2.0.1/reccli-ts-linux-x86_64.tar.gz)
 
-2. 解压下载的压缩包到任意目录：
-   ```bash
-   tar -xzf reccli-ts-linux-x86_64.tar.gz
-   ```
+2. 解压下载的压缩包到任意目录：``` tar -xzf reccli-ts-linux-x86_64.tar.gz ```
 
-3. 进入解压后的目录并运行启动脚本：
-   ```bash
-   cd reccli-ts
-   ./run-linux.sh
-   ```
+3. 进入解压后的目录并运行启动脚本：``` cd reccli-ts && ./run-linux.sh ```
 
 4. 启动成功后，打开浏览器并访问：[http://localhost:5173](http://localhost:5173)
 
-就这么简单！无需额外配置，程序会自动设置所需的环境并启动本地服务器。
+无需额外配置，程序会自动设置所需的环境并启动并运行 reccli-ts。
 
-注：
+!!! question "运行脚本后弹出好多黑框框？"
 
-- 在运行 `run-linux.sh` 时，可能会弹出 3 个命令行窗口，其中一个是运行 `run-linux.sh` 的窗口，另两个是运行 reccli-ts 服务器和客户端的窗口。您可以最小化这些窗口，它们会在后台运行，但是请注意在迁移任务运行过程中**不要**关闭它们，否则 reccli-ts 将无法正常工作。等您**确认**所有迁移任务结束后，您可以关闭这些窗口来结束 reccli-ts 的运行。
+      在运行 `run-linux.sh` 时，可能会弹出 2 个命令行窗口，分别是运行 reccli-ts 服务器和客户端的窗口。您可以最小化这些窗口，它们会在后台运行，但是请注意在迁移任务运行过程中**不要**关闭它们，否则 reccli-ts 将无法正常工作。等您**确认**所有迁移任务结束后，您可以关闭这些窗口来结束 reccli-ts 的运行。
+---
 
-- 如果您的 Linux 系统没有安装图形界面，那么 `run-linux.sh` 脚本会在后台运行 reccli-ts 服务器和客户端，脚本执行过程中会打印出它们的 PID，在**确认**完成迁移任务后，您可以通过 `pkill node` 或者 `kill <PID>` 命令来结束它们的运行。
+!!! question "无图形界面系统如何使用？"
 
-- 在运行 `run-linux.sh` 时，脚本会自动配置环境变量和依赖项，并编译该项目，因此执行时间可能会稍长，请耐心等待，直到能通过浏览器访问 [http://localhost:5173](http://localhost:5173) 界面。
+      如果您的 Linux 系统没有安装图形界面，那么 `run-linux.sh` 脚本会在后台运行 reccli-ts 服务器和客户端，脚本执行过程中会打印出它们的 PID，在**确认**完成迁移任务后，您可以通过 `pkill node` 或者 `kill <PID>` 命令来结束它们的运行。
+---
+
+!!! question "运行脚本后浏览器访问不了？"
+
+      在运行 `run-linux.sh` 时，脚本会自动配置环境变量和依赖项，并编译该项目，因此执行时间可能会稍长，请耐心等待，直到能通过浏览器访问 [http://localhost:5173](http://localhost:5173) 界面。
+---
 
 ## 手动安装
 
@@ -52,25 +52,23 @@
 
 按照以下顺序执行命令：
 
-#### 1. 克隆 GitHub 仓库
+#### 1. 下载 reccli-ts 源代码
 
 ```bash
 git clone https://github.com/Vertsineu/reccli-ts.git
-```
 
-#### 2. 进入项目目录
-
-```bash
 cd reccli-ts
 ```
 
-#### 3. 安装依赖并构建项目
+#### 2. 安装依赖
 
 ```bash
 # 安装项目依赖
 npm install
 npm run client:install
 ```
+
+#### 3. 构建项目
 
 ```bash
 # 构建项目

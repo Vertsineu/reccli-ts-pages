@@ -14,19 +14,23 @@
 1. 从以下链接下载最新的 Windows 安装包：
    [reccli-ts-windows-x86_64.zip](https://github.com/Vertsineu/reccli-ts/releases/download/v2.0.2/reccli-ts-windows-x86_64.zip)
 
-2. 解压下载的 ZIP 文件到随意的一个临时目录下
+2. 解压下载后的压缩包到任意文件夹下
 
 3. 双击解压后文件夹中的 `run-windows.bat` 文件启动 reccli-ts
 
 4. 启动成功后，打开浏览器并访问: [http://localhost:5173](http://localhost:5173)
 
-就这么简单！无需额外配置，程序会自动设置所需的环境并启动本地服务器。
+无需额外配置，程序会自动设置所需的环境并启动并运行 reccli-ts。
 
-注：
+!!! question "双击脚本后弹出好多黑框框？"
 
-- 在运行 `run-windows.bat` 时，可能会弹出 3 个命令行窗口，其中一个是运行 `run-windows.bat` 的窗口，另两个是运行 reccli-ts 服务器和客户端的窗口。您可以最小化这些窗口，它们会在后台运行，但是请注意在迁移任务运行过程中**不要**关闭它们，否则 reccli-ts 将无法正常工作。等您**确认**所有迁移任务结束后，您可以关闭这些窗口来结束 reccli-ts 的运行。
+      在运行 `run-windows.bat` 时，可能会弹出 3 个命令行窗口，其中一个是运行 `run-windows.bat` 的窗口，另两个是运行 reccli-ts 服务器和客户端的窗口。您可以最小化这些窗口，它们会在后台运行，但是请注意在迁移任务运行过程中**不要**关闭它们，否则 reccli-ts 将无法正常工作。等您**确认**所有迁移任务结束后，您可以关闭这些窗口来结束 reccli-ts 的运行。
+---
 
-- 在运行 `run-windows.bat` 时，脚本会自动配置环境变量和依赖项，并编译该项目，因此执行时间可能会稍长，请耐心等待，直到能通过浏览器访问 [http://localhost:5173](http://localhost:5173) 界面。
+!!! question "运行脚本后浏览器访问不了？"
+
+      在运行 `run-windows.bat` 时，脚本会自动配置环境变量和依赖项，并编译该项目，因此执行时间可能会稍长，请耐心等待，直到能通过浏览器访问 [http://localhost:5173](http://localhost:5173) 界面。
+---
 
 ## 手动安装
 
@@ -43,25 +47,22 @@
 
 按照以下顺序执行命令：
 
-#### 1. 克隆 GitHub 仓库
+#### 1. 下载 reccli-ts 源代码
 
 ```bash
 git clone https://github.com/Vertsineu/reccli-ts.git
-```
-
-#### 2. 进入项目目录
-
-```bash
 cd reccli-ts
 ```
 
-#### 3. 安装依赖并构建项目
+#### 2. 安装依赖
 
 ```bash
 # 安装项目依赖
 npm install
 npm run client:install
 ```
+
+#### 3. 构建项目
 
 ```bash
 npm run build
