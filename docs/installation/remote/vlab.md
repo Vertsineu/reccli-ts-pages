@@ -11,7 +11,7 @@
 ## 快速安装
 
 1. 从以下链接下载最新的 Linux 安装包：
-   [reccli-ts-linux-x86_64.tar.gz](https://github.com/Vertsineu/reccli-ts/releases/download/v2.1.0/reccli-ts-linux-x86_64.tar.gz)
+   [reccli-ts-linux-x86_64.tar.gz](https://github.com/Vertsineu/reccli-ts/releases/download/v2.1.1/reccli-ts-linux-x86_64.tar.gz)
 
 2. 解压下载的压缩包到任意目录：``` tar -xzf reccli-ts-linux-x86_64.tar.gz ```
 
